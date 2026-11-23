@@ -36,29 +36,30 @@ SCM constructs a weighted combination of comparison countries that approximates 
 
 **Interpretation:** This is an observational policy evaluation. The synthetic-control results support a policy-related shift in the electricity mix, but concurrent changes in the UK power sector and the assumptions underlying the counterfactual remain relevant. Fuel-specific mechanism plots are descriptive comparisons rather than separately identified causal effects.
 
-## Analyses and Code
 
-All scripts are written in **Stata** and organised by their role in the seminar paper.
+## Code and Analysis
 
-| Folder | Contents |
-|---|---|
-| [`code/main/`](code/main/) | Baseline SCM estimation, observed versus synthetic UK, and gap plot (Figure 1). |
-| [`code/mechanisms/`](code/mechanisms/) | Coal, gas, and renewable shares (Figure 2); coal-related CO₂ and carbon intensity (Figure A2). |
-| [`code/placebo-tests/`](code/placebo-tests/) | In-space placebo tests (Figure 3), RMSPE distribution (Figure 4 and Table B4), and UK–Greece placebo comparison (Figure A3). |
-| [`code/robustness/`](code/robustness/) | Backdating to 2009 and 2011; predictor and donor leave-one-out checks; Greece/Germany sensitivity (Figures A4–A7). |
-| [`code/tables/`](code/tables/) | Pre-intervention predictor balance (Table 1) and donor weights (Table B3). |
+All Stata `.do` files are available in the [`CODE/`](CODE/) directory. The scripts are organized by their analytical purpose and correspond to the figures and tables presented in the seminar paper.
 
-The scripts in this repository are derived from my seminar-project analysis. File paths have been adapted for a repository-based folder structure; **the scripts have not yet been retested end-to-end against a complete set of input data in this layout**.
+| Analysis | Figures and Tables | Description |
+|---|---|---|
+| **Main Results** | Figure 1 (Panels A–B) | Baseline Synthetic Control Method (SCM) estimation, observed versus synthetic UK, and treatment gap. |
+| **Mechanism Analysis** | Figure 2 (Panels A–C), Figure A2 | Coal, gas, and renewable electricity shares; coal-related CO₂ emissions and electricity carbon intensity. |
+| **Placebo and Permutation Tests** | Figures 3–4, Figure A3, Table B4 | In-space placebo tests, post-/pre-treatment RMSPE ratios, and UK–Greece placebo comparison. |
+| **Robustness and Sensitivity Checks** | Figures A4–A7 | Treatment backdating, leave-one-predictor-out, leave-one-donor-out, and Greece/Germany sensitivity tests. |
+| **SCM Diagnostics** | Table 1, Table B3 | Pre-intervention predictor balance and synthetic-control donor weights. |
+
+For detailed descriptions of individual scripts, required datasets, and execution instructions, see the [Code README](CODE/README.md).
+
+
 
 ## Seminar Paper
 
-A public version of the completed seminar paper is available as **[Seminar paper (PDF)](paper/seminar-paper.pdf)**. The publicly shared copy omits the university matriculation number. This is a **student seminar paper**, not a peer-reviewed journal publication.
+A public version of the completed seminar paper is available as **[Seminar Paper](Seminar-paper/UK_CPS_Seminar_Paper_Salar_Sheikholeslami.pdf)**. The publicly shared copy omits the university matriculation number. This is a **student seminar paper**, not a peer-reviewed journal publication.
 
 ## Data Sources
 
 The analysis combines publicly accessible statistical series, obtained for the project through **Our World in Data**, including electricity-generation data based on **Ember / the Energy Institute**, macroeconomic indicators based on the **World Bank and national accounts**, and emissions series based on the **Global Carbon Budget**.
-
-Six original CSV input files are expected in the [`data/`](data/) directory:
 
 | Required file | Purpose |
 |---|---|
