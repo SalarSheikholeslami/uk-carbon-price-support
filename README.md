@@ -4,8 +4,7 @@
 
 **Author:** Salar Sheikholeslami  
 **Institution:** Johannes Kepler University Linz (JKU), Austria  
-**Project:** Seminar Research Project | Winter Semester 2025/26  
-**Instructors:** Prof. Karin Mayr-Dorn and Prof. Daniel Schäfer  
+**Project:** Seminar Research Project | Winter 2025/26  
 **Software:** Stata
 
 ## Overview
