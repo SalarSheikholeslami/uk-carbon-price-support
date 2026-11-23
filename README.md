@@ -49,7 +49,7 @@ All Stata `.do` files are available in the [`code/`](code/) directory. The scrip
 | **Robustness and Sensitivity Checks** | Figures A4–A7 | Treatment backdating, leave-one-predictor-out, leave-one-donor-out, and Greece/Germany sensitivity tests. |
 | **SCM Diagnostics** | Table 1, Table B3 | Pre-intervention predictor balance and synthetic-control donor weights. |
 
-For detailed descriptions of individual scripts, required datasets, and execution instructions, see the [Code README](CODE/README.md).
+For detailed descriptions of individual scripts, required datasets, and execution instructions, see the [code README](code/README.md).
 
 
 
