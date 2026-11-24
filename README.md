@@ -4,7 +4,7 @@
 
 **Author:** Salar Sheikholeslami  
 **Institution:** Johannes Kepler University Linz (JKU), Austria  
-**Project:** Seminar Research Project | Winter 2025/26  
+**Project:** Seminar Research Project | February 2026  
 
 ## Overview
 
